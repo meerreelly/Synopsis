@@ -19,8 +19,8 @@ public class Context:DbContext
     
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        Env.Load();
-        optionsBuilder.UseNpgsql(Env.GetString("DATABASE"));
+        string connectionString = Env.GetString("DATABASE");
+        optionsBuilder.UseNpgsql(connectionString);
     }
     
 }

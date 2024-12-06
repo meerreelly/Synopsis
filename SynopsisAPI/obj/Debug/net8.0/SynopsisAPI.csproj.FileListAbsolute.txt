@@ -60,3 +60,4 @@ C:\Users\merely\RiderProjects\Synopsis\SynopsisAPI\bin\Debug\net8.0\Repository.p
 C:\Users\merely\RiderProjects\Synopsis\SynopsisAPI\bin\Debug\net8.0\Core.pdb
 C:\Users\merely\RiderProjects\Synopsis\SynopsisAPI\bin\Debug\net8.0\DotNetEnv.dll
 C:\Users\merely\RiderProjects\Synopsis\SynopsisAPI\bin\Debug\net8.0\Sprache.dll
+C:\Users\merely\RiderProjects\Synopsis\SynopsisAPI\obj\Debug\net8.0\SynopsisAPI.sourcelink.json

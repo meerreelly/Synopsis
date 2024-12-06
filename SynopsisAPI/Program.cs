@@ -15,7 +15,7 @@ builder.Services.AddControllers();
 
 
 //load env file
-Env.Load();
+Env.Load("../.env");
 
 string jwtKey = Env.GetString("JWT_KEY");
 string googleClientId = Env.GetString("GOOGLE_CLIENT_ID");
