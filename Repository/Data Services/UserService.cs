@@ -73,17 +73,15 @@ public class UserService
         _userRepository.Update(user);
     }
 
-    public User GetUserByEmail(string email)
+    public User? GetUserByEmail(string email)
     {
-        if (string.IsNullOrEmpty(email)) throw new ArgumentNullException(nameof(email));
+        if (string.IsNullOrEmpty(email)) return null;
 
         var user = _userRepository.GetAllQueryable()
             .Include(u => u.Overviews)
             .Include(u => u.FilmPoints)
             .Include(u => u.ViewStatuses)
             .FirstOrDefault(u => u.Email == email);
-        if (user == null) throw new Exception("User not found");
-
         return user;
     }
 

@@ -10,169 +10,104 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="897918ea-8dbb-4652-a10f-9d97b9d61b68" name="Changes" comment="create">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Synopsis/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Synopsis/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Synopsis/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Actor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Core.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Director.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Film.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/FilmLink.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/FilmPoint.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Genre.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Overview.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Person.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Statuses.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/User.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ViewStatus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/bin/Debug/net8.0/Core.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/bin/Debug/net8.0/Core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/bin/Debug/net8.0/Core.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/obj/Core.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/obj/Core.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/obj/Core.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/ref/Core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/refint/Core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/Data Services/ActorService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/Data Services/DirectorService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/Data Services/FilmLinkService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/Data Services/FilmPointService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/Data Services/FilmService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/Data Services/GenreService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/Data Services/OverviewService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/Data Services/UserService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/Data Services/ViewStatus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/Domain/Context.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/Interfaces/IRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/Migrations/20241205005450_1.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/Migrations/20241205005450_1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/Migrations/20241205010134_2.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/Migrations/20241205010134_2.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/Migrations/ContextModelSnapshot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/Repositories/Repository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/Repository.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/bin/Debug/net8.0/Core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/bin/Debug/net8.0/Core.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/bin/Debug/net8.0/Repository.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/bin/Debug/net8.0/Repository.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/bin/Debug/net8.0/Repository.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/bin/Debug/net8.0/Repository.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/Repository.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/Repository.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/Repository.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/Repository.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/Repository.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/Repository.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/Repository.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/Repository.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/Repository.csproj.Up2Date" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/Repository.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/Repository.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/Repository.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/ref/Repository.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/refint/Repository.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/obj/Repository.csproj.EntityFrameworkCore.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/obj/Repository.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/obj/Repository.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/obj/Repository.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repository/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Synopsis.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/Controllers/AuthorizeController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/Controllers/UserController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/SynopsisAPI.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Core.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.Google.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.Extensions.Caching.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.Extensions.Caching.Memory.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.Extensions.Logging.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.Extensions.Options.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.OpenApi.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Npgsql.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Repository.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Repository.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/SynopsisAPI.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/SynopsisAPI.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/SynopsisAPI.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/SynopsisAPI.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/SynopsisAPI.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/System.Diagnostics.DiagnosticSource.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/Synopsis.09EB5F3C.Up2Date" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/SynopsisAPI.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/SynopsisAPI.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/SynopsisAPI.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/SynopsisAPI.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/SynopsisAPI.MvcApplicationPartsAssemblyInfo.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/SynopsisAPI.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/SynopsisAPI.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/SynopsisAPI.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/SynopsisAPI.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/SynopsisAPI.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/SynopsisAPI.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/SynopsisAPI.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/SynopsisAPI.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/apphost.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/ref/SynopsisAPI.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/refint/SynopsisAPI.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/staticwebassets.build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/staticwebassets/msbuild.build.SynopsisAPI.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.SynopsisAPI.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.SynopsisAPI.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/SynopsisAPI.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/SynopsisAPI.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/SynopsisAPI.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SynopsisAPI/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Synopsis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Synopsis/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/bin/Debug/net8.0/Core.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/bin/Debug/net8.0/Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/bin/Debug/net8.0/Core.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/ref/Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/refint/Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repository/Data Services/UserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Repository/Data Services/UserService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repository/bin/Debug/net8.0/Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repository/bin/Debug/net8.0/Core.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repository/bin/Debug/net8.0/Repository.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repository/bin/Debug/net8.0/Repository.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repository/bin/Debug/net8.0/Repository.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repository/bin/Debug/net8.0/Repository.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/Repository.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/Repository.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/Repository.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/Repository.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/Repository.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/Repository.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/Repository.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/Repository.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/Repository.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/Repository.csproj.Up2Date" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/Repository.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/Repository.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/Repository.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/Repository.sourcelink.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/ref/Repository.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repository/obj/Debug/net8.0/refint/Repository.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/Controllers/AuthorizeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SynopsisAPI/Controllers/AuthorizeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Core.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/DotNetEnv.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.Google.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.Extensions.Caching.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.Extensions.Caching.Memory.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.Extensions.Logging.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.Extensions.Options.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Microsoft.OpenApi.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Npgsql.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Repository.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Repository.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Sprache.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/SynopsisAPI.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/SynopsisAPI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/SynopsisAPI.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/SynopsisAPI.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/SynopsisAPI.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/System.Diagnostics.DiagnosticSource.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/bin/Debug/net8.0/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/Synopsis.09EB5F3C.Up2Date" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/SynopsisAPI.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/SynopsisAPI.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/SynopsisAPI.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/SynopsisAPI.MvcApplicationPartsAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/SynopsisAPI.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/SynopsisAPI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/SynopsisAPI.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/SynopsisAPI.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/SynopsisAPI.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/SynopsisAPI.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/SynopsisAPI.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/SynopsisAPI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/SynopsisAPI.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/SynopsisAPI.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/SynopsisAPI.sourcelink.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/ref/SynopsisAPI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/refint/SynopsisAPI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/staticwebassets.build.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/staticwebassets/msbuild.build.SynopsisAPI.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.SynopsisAPI.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SynopsisAPI/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.SynopsisAPI.props" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,29 +138,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.SynopsisAPI: http.executor": "Run",
-    ".NET Launch Settings Profile.SynopsisAPI: https.executor": "Run",
-    "HTTP Request.SynopsisAPI | #1.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.SynopsisAPI: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.SynopsisAPI: https.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.SynopsisAPI | #1.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\merely\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\merely\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\merely\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\merely\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\merely\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\merely\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.SynopsisAPI: http">
     <configuration name="SynopsisAPI | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/SynopsisAPI/SynopsisAPI.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
@@ -292,6 +227,8 @@
       <workItem from="1733355133366" duration="9131000" />
       <workItem from="1733509285936" duration="1458000" />
       <workItem from="1733510788060" duration="2573000" />
+      <workItem from="1733581201868" duration="2348000" />
+      <workItem from="1733584697062" duration="25000" />
     </task>
     <servers />
   </component>
@@ -308,19 +245,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/SynopsisAPI/Controllers/AuthorizeController.cs</url>
-          <line>67</line>
-          <properties documentPath="C:\Users\merely\RiderProjects\Synopsis\SynopsisAPI\Controllers\AuthorizeController.cs" containingFunctionPresentation="Method 'GenerateJwtToken'">
-            <startOffsets>
-              <option value="2339" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2350" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Repository/Domain/Context.cs</url>
           <line>20</line>

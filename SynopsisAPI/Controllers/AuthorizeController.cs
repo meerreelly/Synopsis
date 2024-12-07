@@ -17,6 +17,40 @@ namespace SynopsisAPI.Controllers;
 [Route("Authorize")]
 public class AuthorizeController(Context ctx, IConfiguration configuration) : ControllerBase
 {
+    [HttpGet("/login")]
+    public IActionResult Login(string email, string password)
+    {
+        using (var rep = new Repository<User>(ctx))
+        {
+            var ds = new UserService(rep);
+            var user = ds.GetUserByEmail(email);
+            if(user is null) return Problem("User not found or password is incorrect.");
+            if(user.Password is not null && user.Password == password)
+            {
+                var token = GenerateJwtToken(user);
+                return Ok(token);
+            }
+        }
+        return Problem("User not found or password is incorrect.");
+    }
+    
+    
+    [HttpPost("/register")]
+    public IActionResult Register(string email, string password, string name, string surname)
+    {
+        using (var rep = new Repository<User>(ctx))
+        {
+            var ds = new UserService(rep);
+            if (ds.GetUserByEmail(email) != null)
+            {
+                return Problem("User already exists.");
+            }
+            var user = new User {Email = email, Password = password, FirstName = name, LastName = surname};
+            ds.AddUser(user);
+            return Ok(GenerateJwtToken(user));
+        }
+    }
+    
     
     [HttpGet("/google/login")]
     public IActionResult GoogleLogin()
@@ -29,7 +63,6 @@ public class AuthorizeController(Context ctx, IConfiguration configuration) : Co
     public async Task<IActionResult> GoogleResponse()
     {
         var authenticateResult = await HttpContext.AuthenticateAsync(GoogleDefaults.AuthenticationScheme);
-    
         if (!authenticateResult.Succeeded)
         {
             return Unauthorized();
@@ -49,7 +82,7 @@ public class AuthorizeController(Context ctx, IConfiguration configuration) : Co
         using (var rep = new Repository<User>(ctx))
         {
             var ds = new UserService(rep);
-            var user = ds.GetUserByGoogleId(googleId);
+            var user = ds.GetUserByEmail(email);
             if (user == null)
             {
                
@@ -57,9 +90,13 @@ public class AuthorizeController(Context ctx, IConfiguration configuration) : Co
                     , FirstName = name.Split(" ")[0], LastName = name.Split(" ")[1]??""
                     , AvatarUrl = avatarUrl};
                 ds.AddUser(user);
+            }else if (user.GoogleId is null)
+            {
+                user.GoogleId = googleId;
+                ds.UpdateUser(user);
             }
             var token = GenerateJwtToken(user);
-            return Ok(token);//change
+            return Ok(token);
         }
     }
     
@@ -71,11 +108,9 @@ public class AuthorizeController(Context ctx, IConfiguration configuration) : Co
 
         var claims = new[]
         {
-            new Claim(JwtRegisteredClaimNames.Sub, user.GoogleId),
-            new Claim(JwtRegisteredClaimNames.Email, user.Email),
+            new Claim(JwtRegisteredClaimNames.Sub, user.UserId.ToString()),
+            new Claim(JwtRegisteredClaimNames.Email, user.Email??string.Empty),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-            new Claim("id", user.UserId.ToString()), 
-            new Claim(ClaimTypes.Role, user.Role) 
         };
 
         var token = new JwtSecurityToken(
