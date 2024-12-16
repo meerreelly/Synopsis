@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SynopsisAPI", "SynopsisAPI\SynopsisAPI.csproj", "{A035BD8B-D163-4553-9BEF-54F8F5CD0BB1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Synopsis UI", "Synopsis UI\Synopsis UI.csproj", "{66172889-30B3-4CEE-80B0-2A73A35A88F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsvParser", "CsvParser\CsvParser.csproj", "{C4AB1E03-100C-49D5-9407-03D42039DE58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{A035BD8B-D163-4553-9BEF-54F8F5CD0BB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A035BD8B-D163-4553-9BEF-54F8F5CD0BB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A035BD8B-D163-4553-9BEF-54F8F5CD0BB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66172889-30B3-4CEE-80B0-2A73A35A88F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66172889-30B3-4CEE-80B0-2A73A35A88F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66172889-30B3-4CEE-80B0-2A73A35A88F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66172889-30B3-4CEE-80B0-2A73A35A88F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4AB1E03-100C-49D5-9407-03D42039DE58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4AB1E03-100C-49D5-9407-03D42039DE58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4AB1E03-100C-49D5-9407-03D42039DE58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4AB1E03-100C-49D5-9407-03D42039DE58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

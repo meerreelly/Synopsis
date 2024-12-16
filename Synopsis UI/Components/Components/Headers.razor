@@ -1,0 +1,62 @@
+@using Core.DTO
+@using Synopsis_UI.ApiServices
+@inject Blazored.LocalStorage.ILocalStorageService LocalStorage
+@rendermode InteractiveServer
+<div id="header" style="font-family: cursive;">
+    <div id="header-content">
+        <h1 id="logo"><a href="#" style="font-size: 50px">Synopsis</a></h1>
+        @if (User == null)
+        {
+            <div id="auth-button">
+                <a href="/login" class="auth-button">Login</a>
+            </div>
+        }
+        else
+        {
+        <a href="/profile" class="circle">
+            <img height="128" width="128" src="@User.AvatarUrl" alt="Cloud Chen">
+        </a>
+        }
+     
+    </div>
+
+
+    <nav id="navigation">
+        <div id="menu-search-container">
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="/tytle/page/1/type/Film">Films</a></li>
+                <li><a href="/tytle/page/1/type/Serials">Serials</a></li>
+                <li><a href="/tytle/page/1/type/Anime">Anime</a></li>
+            </ul>
+
+
+            <div id="search">
+                <label for="search-field"><i class="fas fa-search"></i></label>
+                <input type="text" @bind="SearchQuery" placeholder="Search for movies, actors, or directors..." id="search-field" class="search-field" />
+                <button class="search-button" @onclick="PerformSearch">Search</button>
+            </div>
+        </div>
+    </nav>
+</div>
+@code {
+    private string SearchQuery { get; set; } = string.Empty;
+    [Inject]
+    UserService UserService { get; set; }
+    private void PerformSearch()
+    {
+        Console.WriteLine($"Searching for: {SearchQuery}");
+    }
+
+    private UserShortDto User = null;
+    
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            var token = await LocalStorage.GetItemAsync<string>("authToken")??"";
+            User = await UserService.GetUserShortInfo(token.Replace("\"",""));
+            StateHasChanged();  
+        }
+    }
+}

@@ -32,6 +32,14 @@ public class ViewStatusService
 
         return viewStatus;
     }
+    
+    public ViewStatus GetViewStatusByFilmAndUserId(int Filmid, int UserId)
+    {
+        var viewStatus = _viewStatusRepository.GetAllQueryable()
+            .FirstOrDefault(vs => vs.FilmId == Filmid && vs.UserId == UserId);
+
+        return viewStatus;
+    }
 
     public IEnumerable<ViewStatus> GetViewStatusesByUserId(int userId)
     {

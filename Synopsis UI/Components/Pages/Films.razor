@@ -1,0 +1,33 @@
+@page "/tytle/page/{page:int}/type/{type}"
+@using Synopsis_UI.Components.Components
+@rendermode InteractiveServer
+
+<div id="shell">
+    @if (isReady)
+    {
+        <Headers  />
+        <FilmsListBlock Page="page" Type="@type" />
+        
+    }
+    else
+    {
+        <Loader />
+    }
+</div>
+
+@code {
+    [Parameter]
+    public int page { get; set; }
+    [Parameter]
+    public string? type { get; set; }
+    
+    private bool isReady = false;
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        { 
+            isReady = true;
+            StateHasChanged(); 
+        }
+    }
+}

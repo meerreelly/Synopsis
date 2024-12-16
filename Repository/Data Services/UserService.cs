@@ -47,6 +47,18 @@ public class UserService
         return user;
     }
     
+    public User? GetUserByDiscordId(string id)
+    {
+        if (id is null) return null;
+
+        var user = _userRepository.GetAllQueryable()
+                .Include(u => u.Overviews)
+                .Include(u => u.FilmPoints)
+                .Include(u => u.ViewStatuses)
+            .FirstOrDefault(u => u.DiscordId == id);
+        return user;
+    }
+    
     public void AddUser(User user)
     {
         if (user == null) throw new ArgumentNullException(nameof(user));

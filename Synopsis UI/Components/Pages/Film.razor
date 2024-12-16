@@ -1,0 +1,25 @@
+@page "/tytle/{FilmId:int}"
+@using Core
+@using Synopsis_UI.ApiServices
+@using Synopsis_UI.Components.Components
+@inject FilmService fService
+@rendermode InteractiveServer
+<PageTitle>Synopsis</PageTitle>
+
+<div id="shell">
+
+        <Headers/>
+        <FilmBlock FilmId="FilmId"/>
+</div>
+
+@code {
+    [Parameter]
+    public int FilmId { get; set; }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            StateHasChanged();
+        }
+    }
+}

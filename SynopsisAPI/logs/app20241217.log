@@ -1,0 +1,309 @@
+2024-12-17 00:33:25.877 +02:00 [INF] Starting application
+2024-12-17 00:33:25.944 +02:00 [INF] User profile is available. Using 'C:\Users\merely\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-17 00:33:26.052 +02:00 [INF] Now listening on: http://localhost:5139
+2024-12-17 00:33:26.055 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-17 00:33:26.056 +02:00 [INF] Hosting environment: Development
+2024-12-17 00:33:26.057 +02:00 [INF] Content root path: C:\Users\merely\RiderProjects\Synopsis\SynopsisAPI
+2024-12-17 00:33:26.756 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/swagger/index.html - null null
+2024-12-17 00:33:27.011 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/swagger/index.html - 200 null text/html;charset=utf-8 266.8405ms
+2024-12-17 00:33:27.107 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/swagger/v1/swagger.json - null null
+2024-12-17 00:33:27.293 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 187.2889ms
+2024-12-17 00:33:43.927 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/getUserShort - null null
+2024-12-17 00:33:43.932 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5139/getRange?page=1&count=12 - application/json; charset=utf-8 null
+2024-12-17 00:33:43.935 +02:00 [WRN] Failed to determine the https port for redirect.
+2024-12-17 00:33:43.984 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI)'
+2024-12-17 00:33:44.016 +02:00 [INF] Route matched with {action = "GetRange", controller = "Film"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRange(Int32, Int32, Core.DTO.FilmSearchDto) on controller SynopsisAPI.Controllers.FilmController (SynopsisAPI).
+2024-12-17 00:33:44.062 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI)'
+2024-12-17 00:33:44.065 +02:00 [INF] Route matched with {action = "GetUserShort", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUserShort() on controller SynopsisAPI.Controllers.UserController (SynopsisAPI).
+2024-12-17 00:33:44.087 +02:00 [INF] Executing action method SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:33:44.232 +02:00 [INF] Executing action method SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:33:46.093 +02:00 [INF] Executed action method SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1854.1427ms.
+2024-12-17 00:33:46.104 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Core.Film, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-17 00:33:46.105 +02:00 [INF] Executed action method SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2014.9723ms.
+2024-12-17 00:33:46.107 +02:00 [INF] Executing OkObjectResult, writing value of type 'Core.DTO.UserShortDto'.
+2024-12-17 00:33:46.150 +02:00 [INF] Executed action SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI) in 2078.9366ms
+2024-12-17 00:33:46.151 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI)'
+2024-12-17 00:33:46.153 +02:00 [INF] Executed action SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI) in 2135.3045ms
+2024-12-17 00:33:46.155 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI)'
+2024-12-17 00:33:46.162 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/getUserShort - 200 186 application/json; charset=utf-8 2236.18ms
+2024-12-17 00:33:46.162 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5139/getRange?page=1&count=12 - 200 6797 application/json; charset=utf-8 2230.8039ms
+2024-12-17 00:33:46.173 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/getFilmCount - null null
+2024-12-17 00:33:46.178 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)'
+2024-12-17 00:33:46.181 +02:00 [INF] Route matched with {action = "GetFilmCount", controller = "Film"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetFilmCount() on controller SynopsisAPI.Controllers.FilmController (SynopsisAPI).
+2024-12-17 00:33:46.183 +02:00 [INF] Executing action method SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:33:46.265 +02:00 [INF] Executed action method SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 80.2133ms.
+2024-12-17 00:33:46.266 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Int32'.
+2024-12-17 00:33:46.267 +02:00 [INF] Executed action SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI) in 85.1503ms
+2024-12-17 00:33:46.268 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)'
+2024-12-17 00:33:46.270 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/getFilmCount - 200 3 application/json; charset=utf-8 96.3458ms
+2024-12-17 00:34:51.312 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5139/getRange?page=1&count=12 - application/json; charset=utf-8 null
+2024-12-17 00:34:51.314 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/getUserShort - null null
+2024-12-17 00:34:51.316 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI)'
+2024-12-17 00:34:51.319 +02:00 [INF] Route matched with {action = "GetRange", controller = "Film"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRange(Int32, Int32, Core.DTO.FilmSearchDto) on controller SynopsisAPI.Controllers.FilmController (SynopsisAPI).
+2024-12-17 00:34:51.323 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI)'
+2024-12-17 00:34:51.324 +02:00 [INF] Executing action method SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:34:51.324 +02:00 [INF] Route matched with {action = "GetUserShort", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUserShort() on controller SynopsisAPI.Controllers.UserController (SynopsisAPI).
+2024-12-17 00:34:51.327 +02:00 [INF] Executing action method SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:34:51.346 +02:00 [INF] Executed action method SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 21.0206ms.
+2024-12-17 00:34:51.346 +02:00 [INF] Executed action method SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 18.1426ms.
+2024-12-17 00:34:51.348 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Core.Film, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-17 00:34:51.349 +02:00 [INF] Executing OkObjectResult, writing value of type 'Core.DTO.UserShortDto'.
+2024-12-17 00:34:51.351 +02:00 [INF] Executed action SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI) in 28.9957ms
+2024-12-17 00:34:51.352 +02:00 [INF] Executed action SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI) in 25.0813ms
+2024-12-17 00:34:51.353 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI)'
+2024-12-17 00:34:51.354 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI)'
+2024-12-17 00:34:51.356 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5139/getRange?page=1&count=12 - 200 6797 application/json; charset=utf-8 43.4557ms
+2024-12-17 00:34:51.356 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/getUserShort - 200 186 application/json; charset=utf-8 42.6188ms
+2024-12-17 00:34:51.359 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/getFilmCount - null null
+2024-12-17 00:34:51.363 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)'
+2024-12-17 00:34:51.364 +02:00 [INF] Route matched with {action = "GetFilmCount", controller = "Film"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetFilmCount() on controller SynopsisAPI.Controllers.FilmController (SynopsisAPI).
+2024-12-17 00:34:51.365 +02:00 [INF] Executing action method SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:34:51.376 +02:00 [INF] Executed action method SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.123ms.
+2024-12-17 00:34:51.377 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Int32'.
+2024-12-17 00:34:51.378 +02:00 [INF] Executed action SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI) in 12.8853ms
+2024-12-17 00:34:51.379 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)'
+2024-12-17 00:34:51.380 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/getFilmCount - 200 3 application/json; charset=utf-8 20.9463ms
+2024-12-17 00:43:48.261 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/getUserShort - null null
+2024-12-17 00:43:48.262 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5139/getRange?page=1&count=12 - application/json; charset=utf-8 null
+2024-12-17 00:43:48.266 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI)'
+2024-12-17 00:43:48.268 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI)'
+2024-12-17 00:43:48.269 +02:00 [INF] Route matched with {action = "GetUserShort", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUserShort() on controller SynopsisAPI.Controllers.UserController (SynopsisAPI).
+2024-12-17 00:43:48.271 +02:00 [INF] Route matched with {action = "GetRange", controller = "Film"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRange(Int32, Int32, Core.DTO.FilmSearchDto) on controller SynopsisAPI.Controllers.FilmController (SynopsisAPI).
+2024-12-17 00:43:48.271 +02:00 [INF] Executing action method SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:43:48.280 +02:00 [INF] Executing action method SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:43:48.331 +02:00 [INF] Executed action method SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 49.4242ms.
+2024-12-17 00:43:48.331 +02:00 [INF] Executed action method SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 51.251ms.
+2024-12-17 00:43:48.332 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Core.Film, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-17 00:43:48.333 +02:00 [INF] Executing OkObjectResult, writing value of type 'Core.DTO.UserShortDto'.
+2024-12-17 00:43:48.334 +02:00 [INF] Executed action SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI) in 56.1345ms
+2024-12-17 00:43:48.334 +02:00 [INF] Executed action SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI) in 64.1268ms
+2024-12-17 00:43:48.335 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI)'
+2024-12-17 00:43:48.336 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI)'
+2024-12-17 00:43:48.336 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5139/getRange?page=1&count=12 - 200 6797 application/json; charset=utf-8 74.4422ms
+2024-12-17 00:43:48.337 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/getUserShort - 200 186 application/json; charset=utf-8 76.3732ms
+2024-12-17 00:43:48.341 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/getFilmCount - null null
+2024-12-17 00:43:48.343 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)'
+2024-12-17 00:43:48.345 +02:00 [INF] Route matched with {action = "GetFilmCount", controller = "Film"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetFilmCount() on controller SynopsisAPI.Controllers.FilmController (SynopsisAPI).
+2024-12-17 00:43:48.346 +02:00 [INF] Executing action method SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:43:48.353 +02:00 [INF] Executed action method SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.7076ms.
+2024-12-17 00:43:48.354 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Int32'.
+2024-12-17 00:43:48.355 +02:00 [INF] Executed action SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI) in 8.706ms
+2024-12-17 00:43:48.355 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)'
+2024-12-17 00:43:48.356 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/getFilmCount - 200 3 application/json; charset=utf-8 14.8739ms
+2024-12-17 00:47:39.662 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/getUserShort - null null
+2024-12-17 00:47:39.663 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5139/getRange?page=1&count=12 - application/json; charset=utf-8 null
+2024-12-17 00:47:39.665 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI)'
+2024-12-17 00:47:39.669 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI)'
+2024-12-17 00:47:39.670 +02:00 [INF] Route matched with {action = "GetUserShort", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUserShort() on controller SynopsisAPI.Controllers.UserController (SynopsisAPI).
+2024-12-17 00:47:39.672 +02:00 [INF] Route matched with {action = "GetRange", controller = "Film"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRange(Int32, Int32, Core.DTO.FilmSearchDto) on controller SynopsisAPI.Controllers.FilmController (SynopsisAPI).
+2024-12-17 00:47:39.672 +02:00 [INF] Executing action method SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:47:39.675 +02:00 [INF] Executing action method SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:47:39.679 +02:00 [INF] Executed action method SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.0275ms.
+2024-12-17 00:47:39.680 +02:00 [INF] Executed action method SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.5841ms.
+2024-12-17 00:47:39.681 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Core.Film, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-17 00:47:39.682 +02:00 [INF] Executing OkObjectResult, writing value of type 'Core.DTO.UserShortDto'.
+2024-12-17 00:47:39.683 +02:00 [INF] Executed action SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI) in 8.8848ms
+2024-12-17 00:47:39.683 +02:00 [INF] Executed action SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI) in 11.5975ms
+2024-12-17 00:47:39.685 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI)'
+2024-12-17 00:47:39.686 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI)'
+2024-12-17 00:47:39.688 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5139/getRange?page=1&count=12 - 200 6797 application/json; charset=utf-8 24.8785ms
+2024-12-17 00:47:39.688 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/getUserShort - 200 186 application/json; charset=utf-8 27.0692ms
+2024-12-17 00:47:39.693 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/getFilmCount - null null
+2024-12-17 00:47:39.695 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)'
+2024-12-17 00:47:39.698 +02:00 [INF] Route matched with {action = "GetFilmCount", controller = "Film"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetFilmCount() on controller SynopsisAPI.Controllers.FilmController (SynopsisAPI).
+2024-12-17 00:47:39.699 +02:00 [INF] Executing action method SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:47:39.704 +02:00 [INF] Executed action method SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.482ms.
+2024-12-17 00:47:39.706 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Int32'.
+2024-12-17 00:47:39.707 +02:00 [INF] Executed action SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI) in 8.5306ms
+2024-12-17 00:47:39.709 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)'
+2024-12-17 00:47:39.710 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/getFilmCount - 200 3 application/json; charset=utf-8 17.225ms
+2024-12-17 00:48:37.061 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5139/getRange?page=1&count=12 - application/json; charset=utf-8 null
+2024-12-17 00:48:37.062 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/getUserShort - null null
+2024-12-17 00:48:37.065 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI)'
+2024-12-17 00:48:37.067 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI)'
+2024-12-17 00:48:37.067 +02:00 [INF] Route matched with {action = "GetRange", controller = "Film"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRange(Int32, Int32, Core.DTO.FilmSearchDto) on controller SynopsisAPI.Controllers.FilmController (SynopsisAPI).
+2024-12-17 00:48:37.069 +02:00 [INF] Route matched with {action = "GetUserShort", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUserShort() on controller SynopsisAPI.Controllers.UserController (SynopsisAPI).
+2024-12-17 00:48:37.071 +02:00 [INF] Executing action method SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:48:37.072 +02:00 [INF] Executing action method SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:48:37.078 +02:00 [INF] Executed action method SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.9848ms.
+2024-12-17 00:48:37.079 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Core.Film, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-17 00:48:37.081 +02:00 [INF] Executed action SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI) in 10.5363ms
+2024-12-17 00:48:37.082 +02:00 [INF] Executed action method SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.2361ms.
+2024-12-17 00:48:37.084 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI)'
+2024-12-17 00:48:37.085 +02:00 [INF] Executing OkObjectResult, writing value of type 'Core.DTO.UserShortDto'.
+2024-12-17 00:48:37.087 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5139/getRange?page=1&count=12 - 200 6797 application/json; charset=utf-8 26.1939ms
+2024-12-17 00:48:37.088 +02:00 [INF] Executed action SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI) in 16.8567ms
+2024-12-17 00:48:37.091 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/getFilmCount - null null
+2024-12-17 00:48:37.092 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI)'
+2024-12-17 00:48:37.094 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)'
+2024-12-17 00:48:37.094 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/getUserShort - 200 186 application/json; charset=utf-8 32.525ms
+2024-12-17 00:48:37.095 +02:00 [INF] Route matched with {action = "GetFilmCount", controller = "Film"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetFilmCount() on controller SynopsisAPI.Controllers.FilmController (SynopsisAPI).
+2024-12-17 00:48:37.100 +02:00 [INF] Executing action method SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:48:37.104 +02:00 [INF] Executed action method SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.2884ms.
+2024-12-17 00:48:37.105 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Int32'.
+2024-12-17 00:48:37.106 +02:00 [INF] Executed action SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI) in 6.2006ms
+2024-12-17 00:48:37.107 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)'
+2024-12-17 00:48:37.108 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/getFilmCount - 200 3 application/json; charset=utf-8 17.3731ms
+2024-12-17 00:49:16.096 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5139/getRange?page=1&count=12 - application/json; charset=utf-8 null
+2024-12-17 00:49:16.096 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/getUserShort - null null
+2024-12-17 00:49:16.098 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI)'
+2024-12-17 00:49:16.101 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI)'
+2024-12-17 00:49:16.102 +02:00 [INF] Route matched with {action = "GetRange", controller = "Film"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRange(Int32, Int32, Core.DTO.FilmSearchDto) on controller SynopsisAPI.Controllers.FilmController (SynopsisAPI).
+2024-12-17 00:49:16.103 +02:00 [INF] Route matched with {action = "GetUserShort", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUserShort() on controller SynopsisAPI.Controllers.UserController (SynopsisAPI).
+2024-12-17 00:49:16.105 +02:00 [INF] Executing action method SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:49:16.106 +02:00 [INF] Executing action method SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:49:16.156 +02:00 [INF] Executed action method SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 49.2223ms.
+2024-12-17 00:49:16.157 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Core.Film, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-17 00:49:16.158 +02:00 [INF] Executed action SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI) in 54.8229ms
+2024-12-17 00:49:16.161 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI)'
+2024-12-17 00:49:16.162 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5139/getRange?page=1&count=12 - 200 6797 application/json; charset=utf-8 66.0151ms
+2024-12-17 00:49:16.164 +02:00 [INF] Executed action method SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 56.203ms.
+2024-12-17 00:49:16.168 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/getFilmCount - null null
+2024-12-17 00:49:16.168 +02:00 [INF] Executing OkObjectResult, writing value of type 'Core.DTO.UserShortDto'.
+2024-12-17 00:49:16.171 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)'
+2024-12-17 00:49:16.171 +02:00 [INF] Executed action SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI) in 65.9035ms
+2024-12-17 00:49:16.174 +02:00 [INF] Route matched with {action = "GetFilmCount", controller = "Film"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetFilmCount() on controller SynopsisAPI.Controllers.FilmController (SynopsisAPI).
+2024-12-17 00:49:16.176 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI)'
+2024-12-17 00:49:16.178 +02:00 [INF] Executing action method SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:49:16.179 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/getUserShort - 200 186 application/json; charset=utf-8 82.4387ms
+2024-12-17 00:49:16.182 +02:00 [INF] Executed action method SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.5248ms.
+2024-12-17 00:49:16.184 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Int32'.
+2024-12-17 00:49:16.185 +02:00 [INF] Executed action SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI) in 6.8403ms
+2024-12-17 00:49:16.186 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)'
+2024-12-17 00:49:16.187 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/getFilmCount - 200 3 application/json; charset=utf-8 19.2211ms
+2024-12-17 00:49:48.762 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/getUserShort - null null
+2024-12-17 00:49:48.763 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5139/getRange?page=1&count=12 - application/json; charset=utf-8 null
+2024-12-17 00:49:48.764 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI)'
+2024-12-17 00:49:48.767 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI)'
+2024-12-17 00:49:48.767 +02:00 [INF] Route matched with {action = "GetUserShort", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUserShort() on controller SynopsisAPI.Controllers.UserController (SynopsisAPI).
+2024-12-17 00:49:48.768 +02:00 [INF] Executing action method SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:49:48.769 +02:00 [INF] Route matched with {action = "GetRange", controller = "Film"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRange(Int32, Int32, Core.DTO.FilmSearchDto) on controller SynopsisAPI.Controllers.FilmController (SynopsisAPI).
+2024-12-17 00:49:48.772 +02:00 [INF] Executing action method SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:49:48.776 +02:00 [INF] Executed action method SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6.5169ms.
+2024-12-17 00:49:48.777 +02:00 [INF] Executing OkObjectResult, writing value of type 'Core.DTO.UserShortDto'.
+2024-12-17 00:49:48.778 +02:00 [INF] Executed action SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI) in 10.1326ms
+2024-12-17 00:49:48.780 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI)'
+2024-12-17 00:49:48.780 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/getUserShort - 200 186 application/json; charset=utf-8 18.9913ms
+2024-12-17 00:49:48.784 +02:00 [INF] Executed action method SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.2573ms.
+2024-12-17 00:49:48.787 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Core.Film, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-17 00:49:48.790 +02:00 [INF] Executed action SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI) in 19.2313ms
+2024-12-17 00:49:48.792 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI)'
+2024-12-17 00:49:48.793 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5139/getRange?page=1&count=12 - 200 6797 application/json; charset=utf-8 30.4563ms
+2024-12-17 00:49:48.796 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/getFilmCount - null null
+2024-12-17 00:49:48.798 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)'
+2024-12-17 00:49:48.800 +02:00 [INF] Route matched with {action = "GetFilmCount", controller = "Film"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetFilmCount() on controller SynopsisAPI.Controllers.FilmController (SynopsisAPI).
+2024-12-17 00:49:48.801 +02:00 [INF] Executing action method SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:49:48.807 +02:00 [INF] Executed action method SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.4333ms.
+2024-12-17 00:49:48.808 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Int32'.
+2024-12-17 00:49:48.810 +02:00 [INF] Executed action SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI) in 8.2456ms
+2024-12-17 00:49:48.812 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)'
+2024-12-17 00:49:48.813 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/getFilmCount - 200 3 application/json; charset=utf-8 16.943ms
+2024-12-17 00:51:20.324 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/getUserShort - null null
+2024-12-17 00:51:20.325 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5139/getRange?page=1&count=12 - application/json; charset=utf-8 null
+2024-12-17 00:51:20.326 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI)'
+2024-12-17 00:51:20.329 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI)'
+2024-12-17 00:51:20.329 +02:00 [INF] Route matched with {action = "GetUserShort", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUserShort() on controller SynopsisAPI.Controllers.UserController (SynopsisAPI).
+2024-12-17 00:51:20.331 +02:00 [INF] Executing action method SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:51:20.333 +02:00 [INF] Route matched with {action = "GetRange", controller = "Film"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRange(Int32, Int32, Core.DTO.FilmSearchDto) on controller SynopsisAPI.Controllers.FilmController (SynopsisAPI).
+2024-12-17 00:51:20.336 +02:00 [INF] Executing action method SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:51:20.340 +02:00 [INF] Executed action method SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.2766ms.
+2024-12-17 00:51:20.340 +02:00 [INF] Executed action method SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 7.6022ms.
+2024-12-17 00:51:20.341 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Core.Film, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-17 00:51:20.342 +02:00 [INF] Executing OkObjectResult, writing value of type 'Core.DTO.UserShortDto'.
+2024-12-17 00:51:20.343 +02:00 [INF] Executed action SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI) in 8.3682ms
+2024-12-17 00:51:20.344 +02:00 [INF] Executed action SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI) in 12.6218ms
+2024-12-17 00:51:20.345 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI)'
+2024-12-17 00:51:20.345 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI)'
+2024-12-17 00:51:20.346 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5139/getRange?page=1&count=12 - 200 6797 application/json; charset=utf-8 21.7409ms
+2024-12-17 00:51:20.347 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/getUserShort - 200 186 application/json; charset=utf-8 23.1623ms
+2024-12-17 00:51:20.351 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/getFilmCount - null null
+2024-12-17 00:51:20.354 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)'
+2024-12-17 00:51:20.357 +02:00 [INF] Route matched with {action = "GetFilmCount", controller = "Film"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetFilmCount() on controller SynopsisAPI.Controllers.FilmController (SynopsisAPI).
+2024-12-17 00:51:20.358 +02:00 [INF] Executing action method SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:51:20.361 +02:00 [INF] Executed action method SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.0891ms.
+2024-12-17 00:51:20.363 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Int32'.
+2024-12-17 00:51:20.364 +02:00 [INF] Executed action SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI) in 5.9673ms
+2024-12-17 00:51:20.365 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)'
+2024-12-17 00:51:20.366 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/getFilmCount - 200 3 application/json; charset=utf-8 14.8082ms
+2024-12-17 00:55:00.495 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/getUserShort - null null
+2024-12-17 00:55:00.496 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5139/getRange?page=1&count=12 - application/json; charset=utf-8 null
+2024-12-17 00:55:00.497 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI)'
+2024-12-17 00:55:00.501 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI)'
+2024-12-17 00:55:00.501 +02:00 [INF] Route matched with {action = "GetUserShort", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUserShort() on controller SynopsisAPI.Controllers.UserController (SynopsisAPI).
+2024-12-17 00:55:00.504 +02:00 [INF] Route matched with {action = "GetRange", controller = "Film"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRange(Int32, Int32, Core.DTO.FilmSearchDto) on controller SynopsisAPI.Controllers.FilmController (SynopsisAPI).
+2024-12-17 00:55:00.504 +02:00 [INF] Executing action method SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:55:00.506 +02:00 [INF] Executing action method SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:55:00.557 +02:00 [INF] Executed action method SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 50.7733ms.
+2024-12-17 00:55:00.559 +02:00 [INF] Executed action method SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 51.6312ms.
+2024-12-17 00:55:00.559 +02:00 [INF] Executing OkObjectResult, writing value of type 'Core.DTO.UserShortDto'.
+2024-12-17 00:55:00.560 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Core.Film, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-17 00:55:00.561 +02:00 [INF] Executed action SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI) in 56.9313ms
+2024-12-17 00:55:00.564 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI)'
+2024-12-17 00:55:00.562 +02:00 [INF] Executed action SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI) in 57.2085ms
+2024-12-17 00:55:00.566 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/getUserShort - 200 186 application/json; charset=utf-8 71.1723ms
+2024-12-17 00:55:00.569 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI)'
+2024-12-17 00:55:00.574 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5139/getRange?page=1&count=12 - 200 6797 application/json; charset=utf-8 78.5513ms
+2024-12-17 00:55:00.576 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/getFilmCount - null null
+2024-12-17 00:55:00.577 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)'
+2024-12-17 00:55:00.581 +02:00 [INF] Route matched with {action = "GetFilmCount", controller = "Film"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetFilmCount() on controller SynopsisAPI.Controllers.FilmController (SynopsisAPI).
+2024-12-17 00:55:00.583 +02:00 [INF] Executing action method SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:55:00.588 +02:00 [INF] Executed action method SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.0921ms.
+2024-12-17 00:55:00.590 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Int32'.
+2024-12-17 00:55:00.591 +02:00 [INF] Executed action SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI) in 8.4628ms
+2024-12-17 00:55:00.592 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)'
+2024-12-17 00:55:00.593 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/getFilmCount - 200 3 application/json; charset=utf-8 17.5256ms
+2024-12-17 00:55:08.257 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5139/getRange?page=1&count=12 - application/json; charset=utf-8 null
+2024-12-17 00:55:08.259 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/getUserShort - null null
+2024-12-17 00:55:08.260 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI)'
+2024-12-17 00:55:08.262 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI)'
+2024-12-17 00:55:08.262 +02:00 [INF] Route matched with {action = "GetRange", controller = "Film"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRange(Int32, Int32, Core.DTO.FilmSearchDto) on controller SynopsisAPI.Controllers.FilmController (SynopsisAPI).
+2024-12-17 00:55:08.263 +02:00 [INF] Route matched with {action = "GetUserShort", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUserShort() on controller SynopsisAPI.Controllers.UserController (SynopsisAPI).
+2024-12-17 00:55:08.265 +02:00 [INF] Executing action method SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:55:08.266 +02:00 [INF] Executing action method SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:55:08.270 +02:00 [INF] Executed action method SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.1302ms.
+2024-12-17 00:55:08.271 +02:00 [INF] Executed action method SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.7131ms.
+2024-12-17 00:55:08.272 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Core.Film, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-17 00:55:08.273 +02:00 [INF] Executing OkObjectResult, writing value of type 'Core.DTO.UserShortDto'.
+2024-12-17 00:55:08.274 +02:00 [INF] Executed action SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI) in 9.5915ms
+2024-12-17 00:55:08.275 +02:00 [INF] Executed action SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI) in 9.3047ms
+2024-12-17 00:55:08.277 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI)'
+2024-12-17 00:55:08.278 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI)'
+2024-12-17 00:55:08.279 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5139/getRange?page=1&count=12 - 200 6797 application/json; charset=utf-8 21.7487ms
+2024-12-17 00:55:08.280 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/getUserShort - 200 166 application/json; charset=utf-8 20.8158ms
+2024-12-17 00:55:08.283 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/getFilmCount - null null
+2024-12-17 00:55:08.288 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)'
+2024-12-17 00:55:08.289 +02:00 [INF] Route matched with {action = "GetFilmCount", controller = "Film"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetFilmCount() on controller SynopsisAPI.Controllers.FilmController (SynopsisAPI).
+2024-12-17 00:55:08.291 +02:00 [INF] Executing action method SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:55:08.295 +02:00 [INF] Executed action method SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.248ms.
+2024-12-17 00:55:08.296 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Int32'.
+2024-12-17 00:55:08.297 +02:00 [INF] Executed action SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI) in 6.4103ms
+2024-12-17 00:55:08.299 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)'
+2024-12-17 00:55:08.300 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/getFilmCount - 200 3 application/json; charset=utf-8 16.8728ms
+2024-12-17 00:55:42.441 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5139/getRange?page=1&count=12 - application/json; charset=utf-8 null
+2024-12-17 00:55:42.443 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/getUserShort - null null
+2024-12-17 00:55:42.444 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI)'
+2024-12-17 00:55:42.446 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI)'
+2024-12-17 00:55:42.447 +02:00 [INF] Route matched with {action = "GetRange", controller = "Film"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRange(Int32, Int32, Core.DTO.FilmSearchDto) on controller SynopsisAPI.Controllers.FilmController (SynopsisAPI).
+2024-12-17 00:55:42.447 +02:00 [INF] Route matched with {action = "GetUserShort", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUserShort() on controller SynopsisAPI.Controllers.UserController (SynopsisAPI).
+2024-12-17 00:55:42.449 +02:00 [INF] Executing action method SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:55:42.450 +02:00 [INF] Executing action method SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:55:42.459 +02:00 [INF] Executed action method SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 7.0384ms.
+2024-12-17 00:55:42.461 +02:00 [INF] Executing OkObjectResult, writing value of type 'Core.DTO.UserShortDto'.
+2024-12-17 00:55:42.462 +02:00 [INF] Executed action SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI) in 11.8134ms
+2024-12-17 00:55:42.463 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.UserController.GetUserShort (SynopsisAPI)'
+2024-12-17 00:55:42.464 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/getUserShort - 200 186 application/json; charset=utf-8 21.404ms
+2024-12-17 00:55:42.469 +02:00 [INF] Executed action method SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 17.938ms.
+2024-12-17 00:55:42.471 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Core.Film, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-17 00:55:42.472 +02:00 [INF] Executed action SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI) in 22.9736ms
+2024-12-17 00:55:42.473 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI)'
+2024-12-17 00:55:42.474 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5139/getRange?page=1&count=12 - 200 6797 application/json; charset=utf-8 32.6903ms
+2024-12-17 00:55:42.477 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/getFilmCount - null null
+2024-12-17 00:55:42.479 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)'
+2024-12-17 00:55:42.480 +02:00 [INF] Route matched with {action = "GetFilmCount", controller = "Film"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetFilmCount() on controller SynopsisAPI.Controllers.FilmController (SynopsisAPI).
+2024-12-17 00:55:42.481 +02:00 [INF] Executing action method SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI) - Validation state: "Valid"
+2024-12-17 00:55:42.485 +02:00 [INF] Executed action method SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.2537ms.
+2024-12-17 00:55:42.486 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Int32'.
+2024-12-17 00:55:42.487 +02:00 [INF] Executed action SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI) in 5.9532ms
+2024-12-17 00:55:42.488 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)'
+2024-12-17 00:55:42.489 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/getFilmCount - 200 3 application/json; charset=utf-8 12.1317ms
+2024-12-17 00:57:50.427 +02:00 [INF] Application is shutting down...

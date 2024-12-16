@@ -8,6 +8,7 @@ public class Context:DbContext
 {
     public DbSet<FilmPoint> FilmPoints => Set<FilmPoint>();
     public DbSet<Film> Films => Set<Film>();
+    public DbSet<TitleType> TitleTypes => Set<TitleType>();
     public DbSet<Actor> Actors => Set<Actor>();
     public DbSet<Director> Directors => Set<Director>();
     public DbSet<Genre> Genres => Set<Genre>();

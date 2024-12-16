@@ -1,12 +1,17 @@
 ﻿using System.IdentityModel.Tokens.Jwt;
+using System.Net.Http.Headers;
 using System.Security.Claims;
 using System.Text;
 using Core;
+using Core.DTO;
 using DotNetEnv;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json;
 using Repository.Data_Services;
 using Repository.Domain;
 using Repository.Repositories;
@@ -17,9 +22,11 @@ namespace SynopsisAPI.Controllers;
 [Route("Authorize")]
 public class AuthorizeController(Context ctx, IConfiguration configuration) : ControllerBase
 {
+    private string UiUrl = $"http://localhost:5277/login-response?token=";
     [HttpGet("/login")]
-    public IActionResult Login(string email, string password)
+    public async Task<IActionResult> Login(string email, string password)
     {
+        await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
         using (var rep = new Repository<User>(ctx))
         {
             var ds = new UserService(rep);
@@ -28,7 +35,7 @@ public class AuthorizeController(Context ctx, IConfiguration configuration) : Co
             if(user.Password is not null && user.Password == password)
             {
                 var token = GenerateJwtToken(user);
-                return Ok(token);
+                return Redirect($"{UiUrl}{Uri.EscapeDataString(token)}");
             }
         }
         return Problem("User not found or password is incorrect.");
@@ -47,14 +54,25 @@ public class AuthorizeController(Context ctx, IConfiguration configuration) : Co
             }
             var user = new User {Email = email, Password = password, FirstName = name, LastName = surname};
             ds.AddUser(user);
-            return Ok(GenerateJwtToken(user));
+            var token =GenerateJwtToken(user);
+            return Redirect($"{UiUrl}{Uri.EscapeDataString(token)}");
         }
     }
     
+    [HttpGet("/discord/login")]
+    public async Task<IActionResult> DiscordLogin()
+    {
+        await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+        var redirectUri = Url.Action("DiscordResponse", "Authorize", null, Request.Scheme);
+        var discordOAuthUrl = $"https://discord.com/api/oauth2/authorize?client_id={Env.GetString("DISCORD_CLIENT_ID")}&redirect_uri={Uri.EscapeDataString(redirectUri)}&response_type=code&scope=identify%20email";
+        return Redirect(discordOAuthUrl);
+    }
+
     
     [HttpGet("/google/login")]
-    public IActionResult GoogleLogin()
+    public async Task<IActionResult> GoogleLogin()
     {
+        await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
         var properties = new AuthenticationProperties { RedirectUri = Url.Action("GoogleResponse") };
         return Challenge(properties, GoogleDefaults.AuthenticationScheme);
     }
@@ -96,9 +114,95 @@ public class AuthorizeController(Context ctx, IConfiguration configuration) : Co
                 ds.UpdateUser(user);
             }
             var token = GenerateJwtToken(user);
-            return Ok(token);
+            return Redirect($"{UiUrl}{Uri.EscapeDataString(token)}");
         }
     }
+    
+    [HttpGet("/discord/response")]
+    public async Task<IActionResult> DiscordResponse(string code)
+{
+    if (string.IsNullOrEmpty(code))
+    {
+        return Problem("Authorization code not provided.");
+    }
+
+    try
+    {
+        // Step 1: Exchange the authorization code for an access token
+        var tokenRequest = new HttpRequestMessage(HttpMethod.Post, "https://discord.com/api/oauth2/token")
+        {
+            Content = new FormUrlEncodedContent(new[]
+            {
+                new KeyValuePair<string, string>("client_id", Env.GetString("DISCORD_CLIENT_ID")),
+                new KeyValuePair<string, string>("client_secret", Env.GetString("DISCORD_CLIENT_SECRET")),
+                new KeyValuePair<string, string>("grant_type", "authorization_code"),
+                new KeyValuePair<string, string>("code", code),
+                new KeyValuePair<string, string>("redirect_uri", $"{Request.Scheme}://{Request.Host}/discord/response")
+            })
+        };
+
+        var httpClient = new HttpClient();
+        var tokenResponse = await httpClient.SendAsync(tokenRequest);
+        if (!tokenResponse.IsSuccessStatusCode)
+        {
+            return Problem("Failed to retrieve access token from Discord.");
+        }
+
+        var tokenResponseContent = await tokenResponse.Content.ReadAsStringAsync();
+        var tokenData = JsonConvert.DeserializeObject<Dictionary<string, string>>(tokenResponseContent);
+        if (!tokenData.TryGetValue("access_token", out var accessToken))
+        {
+            return Problem("Access token not found in the response.");
+        }
+
+        // Step 2: Fetch the user's Discord profile
+        var userRequest = new HttpRequestMessage(HttpMethod.Get, "https://discord.com/api/users/@me");
+        userRequest.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
+
+        var userResponse = await httpClient.SendAsync(userRequest);
+        if (!userResponse.IsSuccessStatusCode)
+        {
+            return Problem("Failed to fetch user information from Discord.");
+        }
+
+        var userContent = await userResponse.Content.ReadAsStringAsync();
+        var discordUser = JsonConvert.DeserializeObject<DiscordUser>(userContent);
+
+        using (var rep = new Repository<User>(ctx))
+        {
+            var ds = new UserService(rep);
+
+            // Step 3: Check if the user exists in the database or create a new one
+            var user = ds.GetUserByEmail(discordUser.Email);
+            if (user == null)
+            {
+                user = new User
+                {
+                    DiscordId = discordUser.Id,
+                    FirstName = discordUser.Username,
+                    Email = discordUser.Email,
+                    AvatarUrl = $"https://cdn.discordapp.com/avatars/{discordUser.Id}/{discordUser.Avatar}.png"
+                };
+                ds.AddUser(user);
+            }
+            else if (user.DiscordId == null)
+            {
+                user.DiscordId = discordUser.Id;
+                ds.UpdateUser(user);
+            }
+
+            // Step 4: Generate and return a JWT token
+            var token = GenerateJwtToken(user);
+            return Redirect($"{UiUrl}{Uri.EscapeDataString(token)}");
+        }
+    }
+    catch (Exception ex)
+    {
+        return Problem($"An error occurred: {ex.Message}");
+    }
+}
+    
+    
     
     private string GenerateJwtToken(User user)
     {
@@ -111,6 +215,7 @@ public class AuthorizeController(Context ctx, IConfiguration configuration) : Co
             new Claim(JwtRegisteredClaimNames.Sub, user.UserId.ToString()),
             new Claim(JwtRegisteredClaimNames.Email, user.Email??string.Empty),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+            new Claim(ClaimTypes.Role, user.Role) 
         };
 
         var token = new JwtSecurityToken(

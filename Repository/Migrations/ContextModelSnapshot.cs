@@ -49,7 +49,6 @@ namespace Repository.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("LastName")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("ActorId");
@@ -70,7 +69,6 @@ namespace Repository.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("LastName")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("DirectorId");
@@ -101,6 +99,9 @@ namespace Repository.Migrations
                     b.Property<int>("NumberOfVotes")
                         .HasColumnType("integer");
 
+                    b.Property<string>("PosterUrl")
+                        .HasColumnType("text");
+
                     b.Property<int>("ReleasedYear")
                         .HasColumnType("integer");
 
@@ -113,7 +114,12 @@ namespace Repository.Migrations
                     b.Property<string>("Title")
                         .HasColumnType("text");
 
+                    b.Property<int>("TitleTypeId")
+                        .HasColumnType("integer");
+
                     b.HasKey("FilmId");
+
+                    b.HasIndex("TitleTypeId");
 
                     b.ToTable("Films");
                 });
@@ -212,6 +218,23 @@ namespace Repository.Migrations
                     b.ToTable("Overviews");
                 });
 
+            modelBuilder.Entity("Core.TitleType", b =>
+                {
+                    b.Property<int>("TitleTypeId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("TitleTypeId"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("TitleTypeId");
+
+                    b.ToTable("TitleTypes");
+                });
+
             modelBuilder.Entity("Core.User", b =>
                 {
                     b.Property<int>("UserId")
@@ -221,6 +244,9 @@ namespace Repository.Migrations
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("UserId"));
 
                     b.Property<string>("AvatarUrl")
+                        .HasColumnType("text");
+
+                    b.Property<string>("DiscordId")
                         .HasColumnType("text");
 
                     b.Property<string>("Email")
@@ -234,7 +260,6 @@ namespace Repository.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("LastName")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Password")
@@ -317,6 +342,17 @@ namespace Repository.Migrations
                         .HasForeignKey("FilmsFilmId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Core.Film", b =>
+                {
+                    b.HasOne("Core.TitleType", "TitleType")
+                        .WithMany()
+                        .HasForeignKey("TitleTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("TitleType");
                 });
 
             modelBuilder.Entity("Core.FilmLink", b =>

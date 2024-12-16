@@ -1,4 +1,5 @@
 ﻿using Core;
+using Core.DTO;
 using Repository.Repositories;
 using Microsoft.EntityFrameworkCore;
 
@@ -61,5 +62,53 @@ public class FilmService
     {
         if (film == null) throw new ArgumentNullException(nameof(film));
         _filmRepository.Update(film);
+    }
+
+    public IEnumerable<Film> GetFilmRange(int page, int pageSize)
+    {
+        return  _filmRepository.GetAllQueryable()
+            .Skip((page - 1) * pageSize)
+            .Take(pageSize)
+            .ToList();
+    }
+    public IEnumerable<Film> GetFilmRange(int page, int pageSize, FilmSearchDto search)
+    {
+        var query = _filmRepository.GetAllQueryable();
+        
+        if (search is not null)
+        {
+            if (!string.IsNullOrEmpty(search.Title))
+            {
+                query = query.Where(f => f.Title.Contains(search.Title, StringComparison.OrdinalIgnoreCase));
+            }
+
+            if (search.TitleType is not  null &&search.TitleType.Name!="all")
+            {
+                query = query.Include(f=>f.TitleType)
+                    .Where(f => f.TitleType.Name.ToLower() == search.TitleType.Name.ToLower());
+            }
+
+            if (search.ReleasedYear > 0)
+            {
+                query = query.Where(f => f.ReleasedYear == search.ReleasedYear);
+            }
+
+            if (search.Genres != null && search.Genres.Any())
+            {
+                query = query.Include(f=>f.Genres)
+                    .Where(f => f.Genres.Any(g => search.Genres.Select(sg => sg.Name).Contains(g.Name)));
+            }
+        }
+        
+        return query.Skip((page - 1) * pageSize)
+            .Take(pageSize)
+            .ToList();
+    }
+
+
+    
+    public int GetFilmCount()
+    {
+        return _filmRepository.GetAllQueryable().Count();
     }
 }

@@ -1,0 +1,21 @@
+2024-12-15 23:02:25.184 +02:00 [INF] Starting application
+2024-12-15 23:02:25.247 +02:00 [INF] User profile is available. Using 'C:\Users\merely\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-15 23:02:25.323 +02:00 [INF] Now listening on: http://localhost:5139
+2024-12-15 23:02:25.326 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-15 23:02:25.327 +02:00 [INF] Hosting environment: Development
+2024-12-15 23:02:25.328 +02:00 [INF] Content root path: C:\Users\merely\RiderProjects\Synopsis\SynopsisAPI
+2024-12-15 23:02:25.677 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/swagger/index.html - null null
+2024-12-15 23:02:25.834 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/swagger/index.html - 200 null text/html;charset=utf-8 164.8913ms
+2024-12-15 23:02:25.897 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/swagger/v1/swagger.json - null null
+2024-12-15 23:02:26.017 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 119.7549ms
+2024-12-15 23:02:52.803 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/getRange?page=1&count=10 - application/json-patch+json null
+2024-12-15 23:02:52.809 +02:00 [WRN] Failed to determine the https port for redirect.
+2024-12-15 23:02:52.839 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI)'
+2024-12-15 23:02:52.860 +02:00 [INF] Route matched with {action = "GetRange", controller = "Film"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRange(Int32, Int32, Core.DTO.FilmSearchDto) on controller SynopsisAPI.Controllers.FilmController (SynopsisAPI).
+2024-12-15 23:02:52.921 +02:00 [INF] Executing action method SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI) - Validation state: "Valid"
+2024-12-15 23:02:54.413 +02:00 [INF] Executed action method SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1487.3191ms.
+2024-12-15 23:02:54.421 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Core.Film, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-15 23:02:54.517 +02:00 [INF] Executed action SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI) in 1652.4335ms
+2024-12-15 23:02:54.518 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.FilmController.GetRange (SynopsisAPI)'
+2024-12-15 23:02:54.527 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/getRange?page=1&count=10 - 200 5548 application/json; charset=utf-8 1723.736ms
+2024-12-15 23:03:12.194 +02:00 [INF] Application is shutting down...

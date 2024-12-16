@@ -1,0 +1,78 @@
+@using Core
+@using Core.DTO
+@using Synopsis_UI.ApiServices
+@inject FilmService fService
+@inject IJSRuntime JSRuntime
+@inject NavigationManager Navigation
+@rendermode InteractiveServer
+<script src="site.js"></script>
+
+<div>
+    @if (Films.Count()>0)
+    {
+        <div id="movies-grid">
+            @foreach (var movie in Films)
+            {
+                <a href="/tytle/@movie.FilmId" style="text-decoration: none; color: inherit;">
+                    <div class="movie-card" @key="movie.FilmId">
+                        <img src="@movie.PosterUrl" alt="@movie.Title" class="movie-poster"/>
+                        <div class="movie-details">
+                            <h3>@movie.Title</h3>
+                        </div>
+                    </div>
+                </a>
+
+            }
+        </div>
+    }
+    else
+    {
+        <Loader />
+    }
+
+
+    <div id="pagination">
+        <button @onclick="PreviousPage" disabled="@(Page == 1)">Previous</button>
+        <span>Page @Page of @TotalPages</span>
+        <button @onclick="NextPage" disabled="@(Page == TotalPages)">Next</button>
+    </div>
+</div>
+@code {
+    [Parameter]
+    public int Page { get; set; } = 1;
+    [Parameter]
+    public string Type { get; set; }
+    
+    private const int PageSize = 12;
+
+    private IEnumerable<Film> Films = Array.Empty<Film>();
+    private int TotalPages = 0;
+    private bool isInitialized = false;
+    
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            Films = await fService.GetFilms(Page, PageSize, new FilmSearchDto() { TitleType = new TitleType{Name = Type} });
+            TotalPages = await fService.GetFilmCount() / PageSize;
+            isInitialized = true;
+            StateHasChanged();
+        }
+    }
+
+    private async Task NextPage()
+    {
+        if (Page < TotalPages)
+        {
+            Navigation.NavigateTo("/tytle/page/" + (Page + 1)+ "/type/" + Type);
+        }
+    }
+
+    private async Task PreviousPage()
+    {
+        if (Page > 1)
+        {
+            Navigation.NavigateTo("/tytle/page/" + (Page - 1)+ "/type/" + Type);
+        }
+    }
+}

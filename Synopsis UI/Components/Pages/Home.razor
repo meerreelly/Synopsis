@@ -1,0 +1,35 @@
+﻿@page "/"
+@using Core.DTO
+@using Synopsis_UI.ApiServices
+@using Synopsis_UI.Components.Components
+@inject Blazored.LocalStorage.ILocalStorageService LocalStorage
+@rendermode InteractiveServer
+    
+
+<PageTitle>Synopsis</PageTitle>
+
+<div id="shell">
+    @if (isReady)
+    {
+        <Headers  />
+        <FilmsListBlock Page= "1" Type="all" />
+        
+
+    }
+    else
+    {
+        <Loader />
+    }
+</div>
+
+@code {
+    private bool isReady = false;
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        { 
+            isReady = true;
+            StateHasChanged(); 
+        }
+    }
+}

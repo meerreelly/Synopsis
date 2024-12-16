@@ -1,0 +1,30 @@
+@page "/login-response"
+@inject HttpClient Http
+@inject NavigationManager Navigation
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
+@rendermode InteractiveServer
+<h3>Processing...</h3>
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        var query = Navigation.ToAbsoluteUri(Navigation.Uri).Query;
+        var queryParams = Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseQuery(query);
+        if (queryParams.TryGetValue("token", out var tokenValues))
+        {
+            var token = tokenValues.FirstOrDefault();
+            if (!string.IsNullOrEmpty(token))
+            {
+                await localStorage.SetItemAsync("authToken", token.Replace("\"", ""));
+                Navigation.NavigateTo("/");
+            }
+            else
+            {
+                Navigation.NavigateTo("/Error");
+            }
+        }
+        else
+        {
+            Navigation.NavigateTo("/Error");
+        }
+    }
+}

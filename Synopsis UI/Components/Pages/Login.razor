@@ -1,0 +1,59 @@
+@page "/login"
+@inject NavigationManager Navigation
+@rendermode InteractiveServer
+<PageTitle>Login</PageTitle>
+
+<div id="auth-shell">
+    <div id="auth-container">
+        <h1 class="auth-title">Login to Synopsis</h1>
+        
+        <!-- Форма стандартної авторизації -->
+        <form id="auth-form" @onsubmit="HandleLogin">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" @bind="Email" placeholder="Enter your email" required />
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" @bind="Password" placeholder="Enter your password" required />
+            </div>
+            <button type="submit" class="auth-button">Login</button>
+        </form>
+
+        <div class="oauth-divider">
+            <span>OR</span>
+        </div>
+
+        <!-- OAuth кнопки -->
+        <div id="oauth-buttons">
+            <button class="oauth-button discord" @onclick="LoginWithDiscord">
+                <i class="fab fa-discord"></i> Login with Discord
+            </button>
+            <button class="oauth-button google" @onclick="LoginWithGoogle">
+                <i class="fab fa-google"></i> Login with Google
+            </button>
+        </div>
+
+        <p class="register-link">Don't have an account? <a href="/register">Register here</a>.</p>
+    </div>
+</div>
+
+@code {
+    private string Email { get; set; } = string.Empty;
+    private string Password { get; set; } = string.Empty;
+
+    private async Task HandleLogin()
+    {
+        Console.WriteLine($"Email: {Email}, Password: {Password}");
+    }
+
+    private void LoginWithDiscord()
+    {
+        Navigation.NavigateTo("http://localhost:5139/discord/login");
+    }
+
+    private void LoginWithGoogle()
+    {
+        Navigation.NavigateTo("http://localhost:5139/google/login");
+    }
+}

@@ -3,7 +3,9 @@
 public class Film
 {
     public int FilmId { get; set; } 
+    public string? PosterUrl { get; set; }
     public string? Title { get; set; }
+    public TitleType TitleType { get; set; }
     public int ReleasedYear { get; set; }
     public string? Certificate { get; set; }
     public int Runtime { get; set; }

@@ -1,0 +1,206 @@
+2024-12-15 19:33:15.163 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-12-15 19:33:15.226 +02:00 [DBG] Hosting starting
+2024-12-15 19:33:15.238 +02:00 [INF] User profile is available. Using 'C:\Users\merely\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-15 19:33:15.248 +02:00 [DBG] Reading data from file 'C:\Users\merely\AppData\Local\ASP.NET\DataProtection-Keys\key-c81382fb-8e6c-4993-a0a2-84e027e9f30e.xml'.
+2024-12-15 19:33:15.251 +02:00 [DBG] Reading data from file 'C:\Users\merely\AppData\Local\ASP.NET\DataProtection-Keys\key-cd550591-23a5-4c77-95ec-05f1b0f744c4.xml'.
+2024-12-15 19:33:15.254 +02:00 [DBG] Found key {c81382fb-8e6c-4993-a0a2-84e027e9f30e}.
+2024-12-15 19:33:15.256 +02:00 [DBG] Found key {cd550591-23a5-4c77-95ec-05f1b0f744c4}.
+2024-12-15 19:33:15.262 +02:00 [DBG] Considering key {c81382fb-8e6c-4993-a0a2-84e027e9f30e} with expiration date 2025-03-05 01:48:14Z as default key.
+2024-12-15 19:33:15.263 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-12-15 19:33:15.265 +02:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-12-15 19:33:15.266 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-12-15 19:33:15.270 +02:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-12-15 19:33:15.271 +02:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-12-15 19:33:15.271 +02:00 [DBG] Using key {c81382fb-8e6c-4993-a0a2-84e027e9f30e} as the default key.
+2024-12-15 19:33:15.272 +02:00 [DBG] Key ring with default key {c81382fb-8e6c-4993-a0a2-84e027e9f30e} was loaded during application startup.
+2024-12-15 19:33:15.329 +02:00 [INF] Now listening on: http://localhost:5139
+2024-12-15 19:33:15.329 +02:00 [DBG] Loaded hosting startup assembly SynopsisAPI
+2024-12-15 19:33:15.330 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-15 19:33:15.330 +02:00 [INF] Hosting environment: Development
+2024-12-15 19:33:15.330 +02:00 [INF] Content root path: C:\Users\merely\RiderProjects\Synopsis\SynopsisAPI
+2024-12-15 19:33:15.330 +02:00 [DBG] Hosting started
+2024-12-15 19:33:15.415 +02:00 [DBG] Connection id "0HN8T5Q795ABH" accepted.
+2024-12-15 19:33:15.416 +02:00 [DBG] Connection id "0HN8T5Q795ABH" started.
+2024-12-15 19:33:15.449 +02:00 [DBG] Connection id "0HN8T5Q795ABI" received FIN.
+2024-12-15 19:33:15.450 +02:00 [DBG] Connection id "0HN8T5Q795ABI" accepted.
+2024-12-15 19:33:15.450 +02:00 [DBG] Connection id "0HN8T5Q795ABI" started.
+2024-12-15 19:33:15.451 +02:00 [DBG] Connection id "0HN8T5Q795ABI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-12-15 19:33:15.454 +02:00 [DBG] Connection id "0HN8T5Q795ABI" disconnecting.
+2024-12-15 19:33:15.454 +02:00 [DBG] Connection id "0HN8T5Q795ABI" stopped.
+2024-12-15 19:33:15.459 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/getFilmCount - null null
+2024-12-15 19:33:15.460 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-12-15 19:33:15.478 +02:00 [DBG] 1 candidate(s) found for the request path '/getFilmCount'
+2024-12-15 19:33:15.483 +02:00 [DBG] Endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)' with route pattern 'getFilmCount' is valid for the request path '/getFilmCount'
+2024-12-15 19:33:15.483 +02:00 [DBG] Request matched endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)'
+2024-12-15 19:33:15.500 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-12-15 19:33:15.504 +02:00 [WRN] Failed to determine the https port for redirect.
+2024-12-15 19:33:15.528 +02:00 [DBG] Connection id "0HN8T5Q795ABJ" accepted.
+2024-12-15 19:33:15.529 +02:00 [DBG] Connection id "0HN8T5Q795ABJ" started.
+2024-12-15 19:33:15.530 +02:00 [DBG] Connection id "0HN8T5Q795ABK" accepted.
+2024-12-15 19:33:15.530 +02:00 [DBG] Connection id "0HN8T5Q795ABK" started.
+2024-12-15 19:33:15.537 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/swagger/index.html - null null
+2024-12-15 19:33:15.538 +02:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-12-15 19:33:15.539 +02:00 [DBG] Request did not match any endpoints
+2024-12-15 19:33:15.550 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-12-15 19:33:15.553 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)'
+2024-12-15 19:33:15.575 +02:00 [INF] Route matched with {action = "GetFilmCount", controller = "Film"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetFilmCount() on controller SynopsisAPI.Controllers.FilmController (SynopsisAPI).
+2024-12-15 19:33:15.577 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-12-15 19:33:15.577 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-12-15 19:33:15.578 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-12-15 19:33:15.578 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-12-15 19:33:15.578 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-12-15 19:33:15.579 +02:00 [DBG] Executing controller factory for controller SynopsisAPI.Controllers.FilmController (SynopsisAPI)
+2024-12-15 19:33:15.635 +02:00 [DBG] Executed controller factory for controller SynopsisAPI.Controllers.FilmController (SynopsisAPI)
+2024-12-15 19:33:15.645 +02:00 [INF] Executing action method SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI) - Validation state: "Valid"
+2024-12-15 19:33:15.690 +02:00 [DBG] Connection id "0HN8T5Q795ABJ" completed keep alive response.
+2024-12-15 19:33:15.692 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/swagger/index.html - 200 null text/html;charset=utf-8 156.2149ms
+2024-12-15 19:33:15.758 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/swagger/v1/swagger.json - null null
+2024-12-15 19:33:15.758 +02:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-12-15 19:33:15.758 +02:00 [DBG] Request did not match any endpoints
+2024-12-15 19:33:15.885 +02:00 [DBG] Connection id "0HN8T5Q795ABJ" completed keep alive response.
+2024-12-15 19:33:15.885 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 126.5956ms
+2024-12-15 19:33:32.032 +02:00 [INF] Executed action SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI) in 16451.0811ms
+2024-12-15 19:33:32.033 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)'
+2024-12-15 19:33:32.033 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure.
+ ---> Npgsql.NpgsqlException (0x80004005): Failed to connect to 109.251.109.162:5432
+ ---> System.TimeoutException: Timeout during connection attempt
+   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|214_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|33_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   --- End of inner exception stack trace ---
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method4(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Repository.Data_Services.FilmService.GetFilmCount() in C:\Users\merely\RiderProjects\Synopsis\Repository\Data Services\FilmService.cs:line 76
+   at SynopsisAPI.Controllers.FilmController.GetFilmCount() in C:\Users\merely\RiderProjects\Synopsis\SynopsisAPI\Controllers\FilmController.cs:line 41
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Program.<>c.<<<Main>$>b__0_6>d.MoveNext() in C:\Users\merely\RiderProjects\Synopsis\SynopsisAPI\Program.cs:line 117
+--- End of stack trace from previous location ---
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-12-15 19:33:32.049 +02:00 [DBG] Connection id "0HN8T5Q795ABH" completed keep alive response.
+2024-12-15 19:33:32.058 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/getFilmCount - 500 null text/plain; charset=utf-8 16616.191ms
+2024-12-15 19:34:36.218 +02:00 [INF] Application is shutting down...
+2024-12-15 19:34:36.219 +02:00 [DBG] Hosting stopping
+2024-12-15 19:34:36.225 +02:00 [DBG] Connection id "0HN8T5Q795ABH" disconnecting.
+2024-12-15 19:34:36.225 +02:00 [DBG] Connection id "0HN8T5Q795ABJ" disconnecting.
+2024-12-15 19:34:36.225 +02:00 [DBG] Connection id "0HN8T5Q795ABK" disconnecting.
+2024-12-15 19:34:36.225 +02:00 [DBG] Connection id "0HN8T5Q795ABK" stopped.
+2024-12-15 19:34:36.225 +02:00 [DBG] Connection id "0HN8T5Q795ABH" stopped.
+2024-12-15 19:34:36.225 +02:00 [DBG] Connection id "0HN8T5Q795ABJ" stopped.
+2024-12-15 19:34:36.226 +02:00 [DBG] Connection id "0HN8T5Q795ABK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-12-15 19:34:36.226 +02:00 [DBG] Connection id "0HN8T5Q795ABH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-12-15 19:34:36.226 +02:00 [DBG] Connection id "0HN8T5Q795ABJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-12-15 19:34:36.230 +02:00 [DBG] Hosting stopped
+2024-12-15 19:34:44.075 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-12-15 19:34:44.135 +02:00 [DBG] Hosting starting
+2024-12-15 19:34:44.146 +02:00 [INF] User profile is available. Using 'C:\Users\merely\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-15 19:34:44.156 +02:00 [DBG] Reading data from file 'C:\Users\merely\AppData\Local\ASP.NET\DataProtection-Keys\key-c81382fb-8e6c-4993-a0a2-84e027e9f30e.xml'.
+2024-12-15 19:34:44.160 +02:00 [DBG] Reading data from file 'C:\Users\merely\AppData\Local\ASP.NET\DataProtection-Keys\key-cd550591-23a5-4c77-95ec-05f1b0f744c4.xml'.
+2024-12-15 19:34:44.163 +02:00 [DBG] Found key {c81382fb-8e6c-4993-a0a2-84e027e9f30e}.
+2024-12-15 19:34:44.164 +02:00 [DBG] Found key {cd550591-23a5-4c77-95ec-05f1b0f744c4}.
+2024-12-15 19:34:44.170 +02:00 [DBG] Considering key {c81382fb-8e6c-4993-a0a2-84e027e9f30e} with expiration date 2025-03-05 01:48:14Z as default key.
+2024-12-15 19:34:44.172 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-12-15 19:34:44.174 +02:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-12-15 19:34:44.174 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-12-15 19:34:44.178 +02:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-12-15 19:34:44.179 +02:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-12-15 19:34:44.180 +02:00 [DBG] Using key {c81382fb-8e6c-4993-a0a2-84e027e9f30e} as the default key.
+2024-12-15 19:34:44.180 +02:00 [DBG] Key ring with default key {c81382fb-8e6c-4993-a0a2-84e027e9f30e} was loaded during application startup.
+2024-12-15 19:34:44.231 +02:00 [INF] Now listening on: http://localhost:5139
+2024-12-15 19:34:44.231 +02:00 [DBG] Loaded hosting startup assembly SynopsisAPI
+2024-12-15 19:34:44.232 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-15 19:34:44.232 +02:00 [INF] Hosting environment: Development
+2024-12-15 19:34:44.232 +02:00 [INF] Content root path: C:\Users\merely\RiderProjects\Synopsis\SynopsisAPI
+2024-12-15 19:34:44.232 +02:00 [DBG] Hosting started
+2024-12-15 19:34:44.313 +02:00 [DBG] Connection id "0HN8T5R1OUJSI" received FIN.
+2024-12-15 19:34:44.318 +02:00 [DBG] Connection id "0HN8T5R1OUJSI" accepted.
+2024-12-15 19:34:44.319 +02:00 [DBG] Connection id "0HN8T5R1OUJSI" started.
+2024-12-15 19:34:44.323 +02:00 [DBG] Connection id "0HN8T5R1OUJSI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-12-15 19:34:44.326 +02:00 [DBG] Connection id "0HN8T5R1OUJSI" disconnecting.
+2024-12-15 19:34:44.331 +02:00 [DBG] Connection id "0HN8T5R1OUJSI" stopped.
+2024-12-15 19:34:44.381 +02:00 [DBG] Connection id "0HN8T5R1OUJSJ" accepted.
+2024-12-15 19:34:44.381 +02:00 [DBG] Connection id "0HN8T5R1OUJSJ" started.
+2024-12-15 19:34:44.382 +02:00 [DBG] Connection id "0HN8T5R1OUJSK" accepted.
+2024-12-15 19:34:44.382 +02:00 [DBG] Connection id "0HN8T5R1OUJSK" started.
+2024-12-15 19:34:44.408 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/swagger/index.html - null null
+2024-12-15 19:34:44.409 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-12-15 19:34:44.426 +02:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-12-15 19:34:44.426 +02:00 [DBG] Request did not match any endpoints
+2024-12-15 19:34:44.573 +02:00 [DBG] Connection id "0HN8T5R1OUJSJ" completed keep alive response.
+2024-12-15 19:34:44.575 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/swagger/index.html - 200 null text/html;charset=utf-8 176.1527ms
+2024-12-15 19:34:44.638 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/swagger/v1/swagger.json - null null
+2024-12-15 19:34:44.639 +02:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-12-15 19:34:44.639 +02:00 [DBG] Request did not match any endpoints
+2024-12-15 19:34:44.764 +02:00 [DBG] Connection id "0HN8T5R1OUJSJ" completed keep alive response.
+2024-12-15 19:34:44.765 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 128.0041ms
+2024-12-15 19:34:53.955 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5139/getFilmCount - null null
+2024-12-15 19:34:53.958 +02:00 [DBG] 1 candidate(s) found for the request path '/getFilmCount'
+2024-12-15 19:34:53.961 +02:00 [DBG] Endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)' with route pattern 'getFilmCount' is valid for the request path '/getFilmCount'
+2024-12-15 19:34:53.962 +02:00 [DBG] Request matched endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)'
+2024-12-15 19:34:53.964 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-12-15 19:34:53.966 +02:00 [WRN] Failed to determine the https port for redirect.
+2024-12-15 19:34:53.993 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-12-15 19:34:53.995 +02:00 [INF] Executing endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)'
+2024-12-15 19:34:54.010 +02:00 [INF] Route matched with {action = "GetFilmCount", controller = "Film"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetFilmCount() on controller SynopsisAPI.Controllers.FilmController (SynopsisAPI).
+2024-12-15 19:34:54.011 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-12-15 19:34:54.011 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-12-15 19:34:54.011 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-12-15 19:34:54.011 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-12-15 19:34:54.011 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-12-15 19:34:54.012 +02:00 [DBG] Executing controller factory for controller SynopsisAPI.Controllers.FilmController (SynopsisAPI)
+2024-12-15 19:34:54.057 +02:00 [DBG] Executed controller factory for controller SynopsisAPI.Controllers.FilmController (SynopsisAPI)
+2024-12-15 19:34:54.065 +02:00 [INF] Executing action method SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI) - Validation state: "Valid"
+2024-12-15 19:34:55.547 +02:00 [INF] Executed action method SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1479.0935ms.
+2024-12-15 19:34:55.550 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-12-15 19:34:55.552 +02:00 [DBG] No information found on request to perform content negotiation.
+2024-12-15 19:34:55.552 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-12-15 19:34:55.552 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-12-15 19:34:55.552 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-12-15 19:34:55.553 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Int32'.
+2024-12-15 19:34:55.605 +02:00 [INF] Executed action SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI) in 1591.2154ms
+2024-12-15 19:34:55.606 +02:00 [INF] Executed endpoint 'SynopsisAPI.Controllers.FilmController.GetFilmCount (SynopsisAPI)'
+2024-12-15 19:34:55.606 +02:00 [DBG] Connection id "0HN8T5R1OUJSJ" completed keep alive response.
+2024-12-15 19:34:55.614 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5139/getFilmCount - 200 3 application/json; charset=utf-8 1659.2497ms
+2024-12-15 19:35:51.163 +02:00 [DBG] Connection id "0HN8T5R1OUJSK" received FIN.
+2024-12-15 19:35:51.164 +02:00 [DBG] Connection id "0HN8T5R1OUJSK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-12-15 19:35:51.164 +02:00 [DBG] Connection id "0HN8T5R1OUJSK" disconnecting.
+2024-12-15 19:35:51.165 +02:00 [DBG] Connection id "0HN8T5R1OUJSK" stopped.
+2024-12-15 19:37:06.367 +02:00 [DBG] Connection id "0HN8T5R1OUJSJ" disconnecting.
+2024-12-15 19:37:06.368 +02:00 [DBG] Connection id "0HN8T5R1OUJSJ" stopped.
+2024-12-15 19:37:06.368 +02:00 [DBG] Connection id "0HN8T5R1OUJSJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-12-15 20:26:53.372 +02:00 [INF] Application is shutting down...
+2024-12-15 20:26:53.373 +02:00 [DBG] Hosting stopping
+2024-12-15 20:26:53.380 +02:00 [DBG] Hosting stopped

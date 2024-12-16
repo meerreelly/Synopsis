@@ -1,0 +1,105 @@
+@using Core
+@using Synopsis_UI.ApiServices
+@inject FilmService fService
+@inject Blazored.LocalStorage.ILocalStorageService LocalStorage
+@rendermode InteractiveServer
+
+<div id="shell">
+    @if (film != null)
+    {
+        <div id="film-details">
+            <div id="filmHeader">
+                <h2>@film.Title (@film.ReleasedYear)</h2>
+                @if (isAuthenticated)
+                {
+                <div class="status-selector">
+                    <select id="statusSelect" @bind="selectedStatus" @bind:after="OnStatusChange">
+                        @foreach (var status in Enum.GetValues(typeof(Statuses)))
+                        {
+                        <option value="@status">@status</option>
+                        }
+                    </select>
+                </div>
+                }
+            </div>
+
+            <div style="display: flex; gap: 20px;">
+                <!-- Постер фільму -->
+                <div>
+                    <img src="@film.PosterUrl" alt="@film.Title" style="border-radius: 10px; width: 300px;"/>
+                </div>
+                <div>
+                    <p><strong>Certificate:</strong> @film.Certificate</p>
+                    <p><strong>Runtime:</strong> @film.Runtime min</p>
+                    <p><strong>IMDB Rating:</strong> @film.ImdbRating / 10</p>
+                    <p><strong>Meta Score:</strong> @film.MetaScore</p>
+                    <p><strong>Votes:</strong> @film.NumberOfVotes</p>
+                    <p><strong>Gross:</strong> $@film.Gross</p>
+                    <p><strong>Overview:</strong> @film.ShortStory</p>
+                    <p>
+                        <strong>Genres:</strong>
+                        @string.Join(", ", film.Genres.Select(g => g.Name))
+                    </p>
+                    <p>
+                        <strong>Directors:</strong>
+                        @string.Join(", ", film.Directors.Select(d => $"{d.FirstName} {d.LastName}"))
+                    </p>
+                    <p>
+                        <strong>Actors:</strong>
+                        @string.Join(", ", film.Actors.Select(a => $"{a.FirstName} {a.LastName}"))
+                    </p>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <Loader />
+    }
+</div>
+
+@code {
+    [Parameter]
+    public int FilmId { get; set; }
+
+    private Film? film;
+    private Statuses selectedStatus = Statuses.NotWatched;
+    private bool isAuthenticated = false;
+
+    [Inject]
+    private UserService UserService { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            var token = await LocalStorage.GetItemAsync<string>("authToken");
+
+            isAuthenticated = !string.IsNullOrEmpty(token);
+            film = await fService.GetFilm(FilmId);
+
+            if (isAuthenticated)
+            {
+                var status = await UserService.GetViewStatus(FilmId, token);
+                if (status != null)
+                    selectedStatus = status.Status ?? Statuses.NotInterested;
+            }
+
+            StateHasChanged();
+        }
+    }
+
+    private async Task OnStatusChange()
+    {
+        var token = await LocalStorage.GetItemAsync<string>("authToken");
+        if (!string.IsNullOrEmpty(token))
+        {
+            await UserService.AddOrUpdateViewStatus(new ViewStatus
+            {
+                FilmId = FilmId,
+                Status = selectedStatus
+            }, token);
+            
+        }
+    }
+}
